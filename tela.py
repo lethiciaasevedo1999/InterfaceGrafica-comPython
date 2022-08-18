@@ -15,7 +15,7 @@ class TelaPython:
             [sg.Slider(range=(0,260), default_value=0, orientation='h', size=(15,20), key='sliderVelocidade')],
             [sg.Button('Enviar Dados')], 
             # Assim que os dados forem preenchidos, os mesmos serão exibidos instantâneamente nesse espaço
-            [sg.Output(size=(30,20))]
+            [sg.Output(size=(40,10))]
 
         ]
 
@@ -46,8 +46,8 @@ class TelaPython:
             nao_aceita_cartao = self.values['naoAceitaCartao']
             velocidade_script = self.values['sliderVelocidade']
 
-            print(f'nome: {nome}')
-            print(f'idade: {idade}')
+            print(f'Nome: {nome}')
+            print(f'Idade: {idade}')
             print(f'aceita gmail: {aceita_gmail}')
             print(f'aceita yahoo: {aceita_yahoo}')
             print(f'aceita outlook: {aceita_outlook}')
